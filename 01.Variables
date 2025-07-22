@@ -1,0 +1,29 @@
+Variables: it is named container for storing the data and values in variables.
+->let,var,const are keyword for declare a variable
+Syntax: let a = 10;
+        let b = 20;
+        let c = a;
+        console.log(a,b);
+a.Declaration: Declaring a variable means creating a variable using keywords like var, let or const.
+Syntax: let x;  //Declaration varible (or) variable declared
+
+b.Initialization: it means assigning an initial value to a declared variable.
+Syntax: let x = 10;  // Declaration + initialization
+
+c.Redeclaration: it means declaring the same varible again using var, let or const.
+*Rules:
+->Var allows redeclaration.
+->let and const do not allow redeclaration in the same scope
+Syntax: var a = 5;
+        var a = 4;      // Redeclaration
+
+d.Reassignment: it means assigning a new value to an already declared variable.
+*Rules:
+->var and let allow reassignment
+->const does not allow reassignment
+Syntax:var x = 20;
+           x = 10;    //Reassignment
+
+       let y = 10;
+           y = 20;    //Reassignment
+
