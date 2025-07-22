@@ -1,0 +1,37 @@
+Scope: it determines the accessibility of variables, functions, and objects within a program.
+Types of Scopes:
+a.Function Scope
+b.Global Scope
+c.Block Scope
+->Global Scope: if variables and functions are declared in the global scope they are accessible from anywhere in your javascript code, both inside and outside functions are block.
+Syntax:let global = "I am a Fresher";
+       let user = "I am Manoj";
+       console.log(global);
+       console.log(user);
+       function Names() {
+       console.log(global);
+       console.log(user);
+       }
+       Names();
+      console.log(global);
+      console.log(user);
+->Function Scope: Function Scope - if variables and functions declared inside a function are only accessible within that specific function and its nested functions.
+Syntax:function users() {
+         let value = 10;
+         let FirstName = "Raju";
+         let string = "Puli";
+         console.log(value, FirstName, string);
+       }
+       users()
+->Block Scope: it refers to the context defined by curly braces {}, where variables declared are accessible only within that specific block and any blocks nested inside it.
+Syntax: {
+         let a = 10;
+         var b = 20;
+         const c = 30;
+         console.log(a, b, c);
+         {
+         console.log(a,b)
+         }
+         }
+         
+
