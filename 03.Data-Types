@@ -1,0 +1,24 @@
+Data Types: A data type in JavaScript defines the kind of value a variable can hold, such as numbers, strings, booleans, objects, or functions.
+There are two types of Data Types
+a.Primitive Data Types - it represents a single value that is not an object and has no method or properties is called immutable in primitive data types
+(Number, String, Boolean, Null, Undefined)
+->Immutable: if the values or object cannot be changed after it is created
+Syntax:let score = 100;
+       console.log("Original score:", score);
+       score = score + 50;
+       console.log("Original score:", score);
+->Mutable: if the values or object can be changed or modified after it is created called mutable.
+->NoN-Primitive Data Types- Object, Array, Functions
+Syntax:let person = {
+        name: "Alice",
+         age: 30 
+         };
+         console.log("Original person object:", person);
+         person.age = 31;
+         person.city = "New York";
+         console.log("Modified person object:", person);
+        let anotherPerson = person;
+        console.log("Another person (initially same as person):", anotherPerson); 
+        anotherPerson.name = "Alicia";
+        console.log("Person after modifying anotherPerson:", person); 
+        console.log("Another person after modifying itself:", anotherPerson);
