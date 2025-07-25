@@ -1,0 +1,25 @@
+A. Primitive Data Types: It represents a single simple value that is not an object and has no methods or properties.
+  a.Numbers: it is capable of storing integers and floating-point numbers in number types.
+  Syntax: let a = 10;
+        var a = 10.4;
+  b.String: it representing characters inside double(" ") and single (' ') is known as a string.
+  Syntax: let FirstName = "Manoj";
+        let LastName = "Puli"
+  c.Boolean: it represents a true or false value is called a boolean.
+  Syntax: let a  = true;
+  d.undefined: it is a data type without a variable after declaration without initialization; the values are known as undefined.
+  Syntax: let myVariable;
+  e.Null: It declared a variable but didn't assign any value is called null.
+  Syntax:let emptyValue = null;
+       console.log(emptyValue); 
+
+B. NON-Primitive Data Types: It refers to the data whose values can be changed or modified after they are created.
+   a.Object: It is a complex data type used to store a collection of related data and functionalities.
+   Syntax: let student = {
+                   id: "AA01",
+                   Name: "Manoj",
+                   age: "26",
+                  };
+         console.log(student);
+    b.Array: It is a special variable that can hold more than one value.
+    Syntax: let fruits = ["orange", "grapes", "apple"}
