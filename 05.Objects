@@ -1,0 +1,39 @@
+*Object: it is a complex data type used to store collection of related data and functionalities.
+Syntax: let student = {
+                   id:"AA01",
+                   Name:"Manoj",
+                   age:"26",
+                  };
+         console.log(student);
+*Nested Object: Sometime we need to create a object inside of another object is called nested object.
+Syntax: let Details = {
+    id: "AA_103",
+    FirstName: "MANOJ",
+    MiddleName: "PULI",
+    LastName: "KUMAR",
+    BirthYear: "July5th1999",
+    NativePlace: "Vuyyuru",
+    address: {
+        Street: "Rajesh Nagar",
+        LandMark: "Near to Flora E.M School",
+        PinCode: "521165",
+        State: "Andhra-Pradesh",
+        Country: "India",
+    }
+   }
+   console.log(Details);
+   console.log(Details.address);
+   console.log(Details.MiddleName);
+   console.log(Details.address.LandMark);
+*Square-Bracket:it is a method for accessing properties of an object or elements of an array using square brackets.
+Syntax:let persons = {
+        name: "Manojkumar",
+       home: "Hyderabad",
+       age: "25",
+       }
+       console.log(persons)
+       console.log(persons["name"]);
+       console.log(persons["home"]);
+* .Notation: it is used to access properties or call methods of an object where object property name is known as valid identifier.
+Syntax: const person = { name: "Alice", age: 30 };
+        console.log(person.name);
