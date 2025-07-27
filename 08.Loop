@@ -1,0 +1,40 @@
+*Loops:it allows a block of code to be excuted repeatedly based on a defined condition. 
+->Types of Loops
+a.Forloop:it is a control flow statement that allows you to repeatedly excute a block of code a specific number of times.
+Syntax: for (let i=0; i<=100; i++){  \\Increment
+        console.log("Number:", i);
+        }
+Explanation of this ForLoop Code:
+->let i=0; --> Initialization
+->i<=100; --> Condition Logic
+->i++ -> i=i+1; update 
+for (let i = 50; i >= 1; i--){ \\Decrement
+    console.log("Number:", i);
+}
+b.While-loop: if first check the condition and excutes the statements.
+Syntax: let i = 1;
+        while (i <= 50) {
+        console.log(i);
+        i++;
+        }
+c.Do-While-loop: it excute a block of code at least once, then continuous to repeat as long as its condition is true.
+Syntax: let j = 1;
+        do {
+         console.log("Count:", j);
+         j++;
+        } while (i <= 5);
+d.For-of-loop: it Iterates over the enumerable properties of an object.
+Syntax: const person = { name: 'Alice', age: 30 };
+        for (const key in person) {
+        console.log(key + ': ' + person[key]);
+        }
+e.For-in-loop: it is used to iterate over the enumerable properties of an object.it provide access the keys object subsequently.
+Syntax: const person = {
+           name: "Manoj",
+           age: 26,
+           city: "Bengaluru"
+          };
+          for (let key in person) {
+           console.log(key);         
+           console.log(person[key]); 
+         }
