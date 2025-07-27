@@ -1,0 +1,18 @@
+Array:it is a single variable that is used to store multiple elements of the same data type.
+*Types of Array
+a.Single dimenstion array:it is a linear collection of elements where each elements is accessed by a single index. it reperesents a simple list of values.
+Syntax:let colors = ["red", "blue", "green", "orange"];
+       console.log(colors);
+b.Multi-Dimensional Array: it is an array where each elements is itself another array, creating a nested structure array.
+Syntax:let value = [
+              [1, 2],
+              [3, 4],
+              [5, 6],
+            ];
+        console.log(value)
+c.Array of objects: it refers to an array where each element within the array is an object.
+Syntax:let users = [
+             { name:"Manoj", age:23 },
+             { name:"Ramu", age:34 },
+            ]
+        console.log(users)
