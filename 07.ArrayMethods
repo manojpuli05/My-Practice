@@ -1,0 +1,39 @@
+1.push()- it is used to add one more element to the end of the array.
+Syntax:let fruits = ["apple", "banana", "orange"];
+       console.log(fruits)
+       fruits.push("grapes")
+       console.log(fruits)
+2.pop() - it removes the last elements of array.
+Syntax:let fruits = ["apple", "banana", "grapes"];
+       console.log(fruits)
+       fruits.pop();
+       console.log(fruits)
+3.unshift() - it is used to add one or more elements to the beginning of an array.
+Syntax:let num = [1, 2, 3, 4, 5];
+       num.unshift(0, 1);
+       console.log(num);
+4.shift() - it is used to remove the first element of array.
+Syntax:let val = [1, 2, 3, 4, 5];
+       val.shift(1);
+       console.log(val);
+5.splice() - it is used to change the content of an array by removing, replacing, or adding elements at a specified position.
+Syntax:let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+       console.log("Original Array:", fruits);
+       // 2. Removing Element
+       // Removes 1 element starting from index 2 ("Cherry")
+      let removedFruits = fruits.splice(2, 1);
+      console.log("\nAfter Removing (1 element from index 2):", fruits);
+      console.log("Removed Elements:", removedFruits);
+     // 3. Replacing Elements
+     // Replaces 2 elements starting from index 1 ("Banana", "Cherry") with "Grape" and "Kiwi"
+    let replacedFruits = fruits.splice(1, 2, "Grape", "Kiwi");
+    console.log("\nAfter Replacing (2 elements from index 1):", fruits); 
+    console.log("Replaced Elements:", replacedFruits);
+    // 4. Adding Elements (without removing any)
+   // Adds "Mango" and "Orange" at index 2 (before "Cherry")
+   fruits.splice(2, 0, "Mango", "Orange");
+   console.log("\nAfter Adding (at index 2):", fruits);
+   // 5. Combining Removing and Adding (a more complex replacement)
+   // Let's remove "Mango", "Orange", "Cherry" and replace them with "Pineapple"
+   fruits.splice(2, 3, "Pineapple");
+   console.log("\nAfter Combined (removing 3, adding 1):", fruits); 
