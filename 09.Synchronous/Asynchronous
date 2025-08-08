@@ -1,0 +1,41 @@
+a.Synchronous: Its execution means tasks run one after another in sequence. A task must finish before the next one starts. It is a single-threaded.
+Syntax: console.log("First Code")
+        console.log("Second Code")
+        console.log("Third Code")
+        console.log("Fourth Code")
+        console.log("Fifth Code")
+b.Asynchronous: it executes tasks without blocking the main thread, allowing other operations to run while waiting for a task to complete.
+                Asynchronous operation involves the use of callbacks, promises, or async/await syntax.
+Syntax: console.log("First Code")
+        console.log("Second Code")
+        setTimeout(() => {
+           console.log("Third Code")
+        },3000);
+        console.log("Fourth Code")
+        console.log("Fifth Code") 
+c.Higher Order Function(HOC): It is a function that takes another function as an argument or returns a function as it result.
+Syntax: console.log("Welcome");
+        const Register = (callback) => {
+            setTimeout(() => {
+                console.log("Please Register");
+                callback();
+            }, 2000);
+        };
+       const Login = (callback) => {
+            setTimeout(() => {
+                console.log("Please Login");
+                callback();
+            }, 2000);
+        } 
+        const Thankyou = () => {
+            setTimeout(() => {
+                console.log("Thank you");
+            }, 1000);
+        };
+
+        // Execution flow using Higher-Order Functions (Callbacks)
+        Register(() => {
+            Login(() => {
+                Thankyou();
+            });
+        });
